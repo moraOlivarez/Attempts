@@ -1,0 +1,15 @@
+{
+    "name": "mora-olivarez/attempts",
+    "description": "A simple trining package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Abner Mora Olivarez",
+        "email": "mora.olivarez@gmail.com"
+    }],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": { "attempts\\": "src/" }
+    },
+    "require": {}
+}
