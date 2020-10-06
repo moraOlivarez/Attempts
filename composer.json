@@ -11,5 +11,7 @@
     "autoload": {
         "psr-4": { "attempts\\": "src/" }
     },
-    "require": {}
+    "require": {
+        "illuminate/database": "^8.9"
+    }
 }
