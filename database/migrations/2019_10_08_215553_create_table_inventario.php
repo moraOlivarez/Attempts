@@ -13,7 +13,7 @@ class CreateTableEmpresas extends Migration
      */
     public function up()
     {
-        Schema::create('Lempresas', function (Blueprint $table) {
+        Schema::create('al', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('rfcEmpresa', 50)->unique();
             $table->string('nombreEmpresa');
