@@ -12,6 +12,6 @@
         "psr-4": { "attempts\\": "src/" }
     },
     "require": {
-        "illuminate/database": "^5.8"
+        "illuminate/database": "7.x-dev"
     }
 }
