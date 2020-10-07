@@ -1,6 +1,6 @@
 <?php
 
-namespace Attempts\entities;
+namespace attempts\entities;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -17,7 +17,7 @@ class StoreEntity extends Model{
         'giroEmpresa'
     ];
 
-    use SoftDeletes;
+    // use SoftDeletes;
 
 
 
