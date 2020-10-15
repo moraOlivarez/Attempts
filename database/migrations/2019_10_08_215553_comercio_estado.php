@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class domicilioProveedor extends Migration
+class comercioEstado extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class domicilioProveedor extends Migration
      */
     public function up()
     {
-        Schema::create('domicilio_proveedor', function (Blueprint $table) {
+        Schema::create('CM_comercioEstado', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('rfcEmpresa', 50)->unique();
-            $table->string('nombreEmpresa');
-            $table->string('razonSocialEmpresa');
-            $table->string('giroEmpresa');
+            $table->integer('comercio_id');
+            $table->string('estado');
             $table->timestamps();
             $table->softDeletes();
             $table->charset = 'utf8';
@@ -33,6 +31,6 @@ class domicilioProveedor extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('domicilio_proveedor');
+        Schema::dropIfExists('CM_comercioEstado');
     }
 }
