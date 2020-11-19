@@ -1,7 +1,7 @@
 <?php
 namespace attempts\support;
 
-trait Singleton {
+trait singleton {
     private static $instance;
     public static function getInstance(){
         if(!(self::$instance instanceof self)){

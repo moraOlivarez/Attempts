@@ -1,5 +1,4 @@
 <?php
-
 namespace attempts\entities;
 
 use Illuminate\Database\Eloquent\Builder;
