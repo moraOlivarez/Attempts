@@ -16,6 +16,7 @@ class ClienteEntity extends Model{
        'apellido_paterno',
        'email',
        'usuario',
+       'clave_acceso',
     ];
 
     // use SoftDeletes;

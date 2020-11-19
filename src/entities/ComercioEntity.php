@@ -12,7 +12,8 @@ class ComercioEntity extends Model{
   //  protected static $razonSocial = 'razonSocialEmpresa';
     protected $fillable = [
         'nombre',
-        'direccion_id'
+        'direccion_id',
+        'cliente_id'
     ];
 
     // use SoftDeletes;

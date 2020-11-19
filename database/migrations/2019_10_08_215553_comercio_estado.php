@@ -13,10 +13,10 @@ class comercioEstado extends Migration
      */
     public function up()
     {
-        Schema::create('CM_comercioEstado', function (Blueprint $table) {
+        Schema::create('CM_comercio_estado', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('comercio_id');
-            $table->string('estado');
+            $table->integer('comercio_id')->uniqued();
+            $table->enum('estado', ['activo', 'desactivado']);
             $table->timestamps();
             $table->softDeletes();
             $table->charset = 'utf8';
@@ -31,6 +31,6 @@ class comercioEstado extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('CM_comercioEstado');
+        Schema::dropIfExists('CM_comercio_estado');
     }
 }

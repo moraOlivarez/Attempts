@@ -18,9 +18,9 @@ class cliente extends Migration
             $table->string('nombre',50);
             $table->string('apellido_materno');
             $table->string('apellido_paterno');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('usuario', 16);
-            $table->string('password');
+            $table->string('clave_acceso');
             $table->timestamps();
             $table->softDeletes();
             $table->charset = 'utf8';

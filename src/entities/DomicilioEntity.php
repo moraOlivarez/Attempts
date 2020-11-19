@@ -7,11 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class DomicilioEntity extends Model{
+     // use SoftDeletes;
     protected $table = 'CM_domicilio';
     protected static $nameTable = 'CM_domicilio';
     //protected static $razonSocial = 'razonSocialEmpresa';
     protected $fillable = [
-       'calle_1', 
+        'calle_1', 
         'calle_2',
         'colonia',
         'codigoPostal',
@@ -21,7 +22,7 @@ class DomicilioEntity extends Model{
         'pais'
     ];
 
-    // use SoftDeletes;
+   
 
 
 
